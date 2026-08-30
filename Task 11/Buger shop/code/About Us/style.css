@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Outfit:wght@100..900&family=Rubik+Bubbles&display=swap');
+
+[data-theme="dark"] {
+          --bg: #141414;
+          --Container: black;
+          --subContainer: #1a1a1a;
+
+          --text: #e5e7eb;
+          --orange: #f98322;
+          --orangeDark: #ff6a00;
+          --gray: #ffffff96;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --Container: white;
+          --subContainer: #c6c6c6;
+          --text: black;
+          --orange: #f98322;
+          --orangeDark: #ff6a00;
+          --gray: #b3b0b096;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
+*,
+*::after,
+*::before {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+@keyframes float {
+          0% {
+                    transform: translateY(10px);
+
+          }
+
+          50% {
+                    transform: translateY(-10px);
+
+          }
+
+          100% {
+                    transform: translateY(10px);
+
+          }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Bubbles&display=swap');
+
+
+*,
+*::after,
+*::before {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+
+body {
+          background: var(--bg);
+          height: 100vh;
+          overflow: auto;
+
+}
+
+header {
+          position: absolute;
+          width: 100vw;
+          z-index: 9999;
+          padding: 0 0;
+          top: 10px;
+          left: 0;
+          height: 7vh;
+
+
+}
+
+#logo {
+          width: min(100px, 20vw);
+}
+
+header nav {
+          width: 90vw;
+          margin: 0 auto;
+          overflow: hidden;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+}
+
+header ul {
+          display: flex;
+          list-style: none;
+          align-items: center;
+}
+
+header ul a {
+          font-family: "Poppi", sans-serif;
+          transition: 1s;
+          text-decoration: none;
+          color: var(--text);
+          text-transform: uppercase;
+          padding: 0 1.5rem;
+          font-weight: 300;
+          font-size: min(2vw, 1em);
+}
+
+header ul a:hover {
+          transition: 200ms;
+          color: var(--orange);
+}
+
+header ul a img {
+          width: 10px;
+}
+
+#themeBtn {
+          background-color: var(--bg);
+          border-radius: 10px;
+          border: none;
+          transition: 100ms;
+          width: 40px;
+          height: 40px;
+          transition: 300ms;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+
+#themeBtn img {
+          width: 40px;
+          height: 40px;
+}
+
+#themeBtn:hover {
+          transition: 300ms;
+          background-color: var(--orange);
+}
+
+main {
+          margin-top: 100px;
+          position: relative;
+          height: auto;
+          width: 100%;
+          text-align: center;
+
+}
+
+h1 {
+          color: var(--text);
+          font-size: 50px;
+          letter-spacing: 2px;
+          font-family: "Outfit", sans-serif;
+          font-weight: 700;
+          margin-bottom: 20px;
+}
+
+span {
+          color: var(--orange);
+
+
+}
+
+p {
+          opacity: 0.8;
+          color: var(--text);
+          font-size: 16px;
+
+          font-family: "Poppi", sans-serif;
+
+          font-weight: 300;
+}
+
+#detail_container {
+          margin: 40px;
+          left: 20%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: 60vw;
+
+          height: 35vh;
+
+
+}
+
+#display_logo {
+          width: 300px;
+}
+
+#logo_card {
+          animation: float 6s infinite;
+
+          width: 28vw;
+          height: 32vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15px;
+          background: radial-gradient(#ffb814, #ff4400)
+}
+
+#brand_details {
+          width: 30vw;
+          height: 35vh;
+          padding: 30px;
+          padding-right: 70px;
+          text-align: left;
+}
+
+h3 {
+          font-family: "Poppi", sans-serif;
+          color: var(--text);
+          font-size: 30px;
+          font-weight: 800;
+
+          margin: 30px;
+          margin-top: 20px;
+          margin-left: 0px;
+
+}
+
+#brand_p {
+          font-size: 18px;
+}
+
+h2 {
+          text-align: start;
+          margin-left: 20%;
+          margin-top: 100px;
+          color: var(--text);
+          font-size: 35px;
+          letter-spacing: 2px;
+          font-family: "Outfit", sans-serif;
+          font-weight: 700;
+          margin-bottom: 20px;
+}
+
+#review_container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          width: 58vw;
+          height: 20vh;
+          left: 20%;
+
+}
+
+.review_child {
+          width: 13vw;
+          height: 18vh;
+          background: var(--subContainer);
+          border-radius: 12px;
+          padding: 25px;
+          transition: 200ms;
+
+}
+
+.review_child:hover {
+          transition: 200ms;
+          transform: translateY(-10px);
+          filter: drop-shadow(0px 0px 10px var(--orange));
+}
+
+h4 {
+          margin-bottom: 20px;
+          color: var(--orange);
+          font-size: 20px;
+          text-align: start;
+          font-family: "Outfit", sans-serif;
+          font-weight: 700;
+
+}
+
+.review_p {
+          opacity: 100;
+          text-align: start;
+          font-weight: 300;
+          letter-spacing: 1px;
+}
+
+@media screen and (max-width:767px) {
+          #detail_container {
+                    justify-self: center;
+                    margin-top: 20px;
+                    left: 0%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90vw;
+                    height: auto;
+
+
+          }
+
+          #logo_card {
+
+                    width: 90vw;
+                    height: 20vh;
+                    display: flex;
+          }
+
+          #brand_details {
+                    width: 90vw;
+                    height: 35vh;
+                    padding: 00px;
+                    padding-right: 0px;
+                    text-align: left;
+          }
+
+          h2 {
+                    text-align: center;
+                    margin-left: 0%;
+                    margin-top: 10px;
+                    color: var(--text);
+          }
+
+          #review_container {
+                    justify-self: center;
+                    gap: 20px;
+                    justify-content: center;
+                    width: 90vw;
+                    flex-wrap: wrap;
+                    height: 20vh;
+                    left: 0%;
+
+          }
+
+          .review_child {
+                    width: auto;
+                    height: 18vh;
+                    border-radius: 12px;
+                    padding: 25px;
+                    transition: 200ms;
+
+          }
+
+          header ul a {
+                    padding: 10px;
+                    font-size: 10px;
+          }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head>
+                    <link rel="stylesheet" href="style.css">
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Unit Converter</title>
+          </head>
+
+          <body data-theme="light">
+                    <div id="mainContainer">
+                              <h1>Unit Converter</h1>
+                              <div>
+                                        <h2>Type</h2>
+
+                                        <select class="dropDown" id="typeContainer">
+                                                  <option value="Distance">Distance</option>
+                                                  <option value="Temrature">Temrature</option>
+                                                  <option value="Storage">Storage</option>
+                                                  <option value="Area">Area</option>
+                                                  <option value="Volume">Volume</option>
+                                        </select>
+                              </div>
+                              <div>
+                                        <h2>Unit to Convert</h2>
+                                        <div class="UnitContainer ">
+                                                  <select id="inputContainer" class="dropDown Unit" name="" id=""></select>
+
+                                                  <input id="inUnit" type="number">
+                                        </div>
+
+                              </div>
+                              <div>
+                                        <h2>Unit to Convert</h2>
+                                        <div class="UnitContainer ">
+                                                  <select id="OutputContainer" class="dropDown Unit" name="" id="">
+                                                  </select>
+
+                                                  <input disabled id="outUnit" type="number">
+                                        </div>
+
+                              </div>
+                              <button id="ConvertBtn">Convert</button>
+
+                    </div>
+
+                    <script src="app.js"></script>
+          </body>
+
+</html>

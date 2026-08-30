@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head><link rel="shortcut icon" href="./img/Stop Watch.svg" type="image/x-icon">
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>StopWatch</title>
+                    <link rel="stylesheet" href="style.css">
+          </head>
+
+          <body data-theme="light">
+                    
+
+                    
+                    <h1>Stop Watch</h1>
+                    <label id="output" for="">00:00:00:00</label>
+                    <br>
+                    <label id="format" for="">H:M:S:Ms</label>
+                    <div id="btnContainer">
+                              <button onclick="laps()" id="lapsBtn">Lap</button>
+                              <button onclick="start(this.innerText)" id="startBtn">Start</button>
+                              <button onclick="reset()" id="resetBtn">Reset</button>
+                    </div>
+                    
+                    <div id="lapsContainer">
+                              <div id="lapsContainerHeader">
+                                        <p>Laps History</p>
+                              </div>
+                              <div id="lapsContainerData"></div>
+
+
+                    </div>
+
+
+
+
+
+                    <script src="app.js"></script>
+          </body>
+
+</html>

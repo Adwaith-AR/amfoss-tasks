@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
+body {
+          margin: 0px;
+          padding: 0px;
+          width: 100dvw;
+          font-family: "Roboto", sans-serif;
+          height: 100dvh;
+          background: var(--bg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color:var(--text);
+
+}
+
+h1 {
+          justify-self: center;
+          font-size: 3em;
+          border-radius: 15px;
+          width: fit-content;
+          padding: 10px;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
+}
+
+#mainContainer {
+          width: 40vw;
+          height: 70vh;
+          text-align: center;
+          padding: 30px;
+          border-radius: 20px;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
+}
+
+#mainContainer>div>h2 {
+          font-size: 2em;
+          text-align: left;
+          color: var(--text);
+}
+
+.dropDown {
+          color: var(--text);
+
+
+
+          border-radius: 15px;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+}
+
+select {
+          outline: none;
+          border: none;
+          font-size: 30px;
+          text-align: center;
+
+}
+
+option {
+          color: var(--text);
+          background: var(--bg);
+          border: none;
+}
+
+#typeContainer {
+          anchor-name: --typeBox;
+          overflow: hidden;
+          width: 100%;
+          height: 6vh;
+
+
+}
+
+#type {
+          position-anchor: --typeBox;
+          z-index: 22;
+          width: anchor-size(width);
+}
+
+
+.Unit {
+          z-index: 1;
+          width: 30%;
+          height: 6vh;
+}
+
+.dropDownList {
+          padding: 0px;
+          position: absolute;
+          list-style: none;
+          border-radius: 15px;
+          background: var(--bg);
+          height: 200px;
+          overflow: auto;
+}
+
+.dropDownList li {
+          padding: 10px;
+          z-index: 200;
+          font-size: 20px;
+          margin: 20px;
+          border-radius: 10px;
+          background: var(--bg);
+          box-shadow: 5px 5px 3px var(--darkShade),
+                    -5px -5px 3px var(--lightShade);
+}
+
+.dropDownList li:hover {
+          background: var(--bg);
+          box-shadow: inset 5px 5px 10px var(--darkShade),
+                    inset -5px -5px 10px var(--lightShade);
+
+}
+
+input {
+          border-radius: 15px;
+          width: 90%;
+          background: var(--bg);
+          border: none;
+          outline: none;
+          color: var(--text);
+          text-align: center;
+          font-size: 30px;
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+
+}
+
+.UnitContainer {
+          width: 100%;
+          gap: 20px;
+          display: flex;
+}
+
+
+
+.UnitContainer {
+          position: relative;
+}
+
+#inputUnitList {
+          display: none;
+}
+
+#ConvertBtn {
+          color: var(--text);
+          font-weight: 1000;
+          font-size: 30px;
+          height: 10%;
+          width: 100%;
+          border: none;
+          border-radius: 10px;
+          margin: 40px;
+          margin-left: 0px;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
+          transition: scale 200ms;
+          transition: box-shadow 1s;
+}
+
+#ConvertBtn:hover {
+          transition: all 200ms;
+          scale: 1.02;
+}
+
+
+#ConvertBtn:active {
+
+          transition: all 100ms;
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+}
+
+
+
+
+@media screen and (max-width:767px) {
+
+          #mainContainer {
+                    width: 85vw;
+                    height: auto;
+                    padding: 10px;
+
+          }
+
+          h1 {
+
+                    font-size: 8vw;
+
+          }
+
+          #mainContainer>div>h2 {
+                    font-size: 5vw;
+          }
+
+          select {
+                    font-size:7vw;
+
+          }
+          #ConvertBtn{
+                    padding: 20px;
+                    width: auto;
+          }
+}
+
+
+
+
+
+::-webkit-scrollbar {
+
+          width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+          background: #51676f;
+
+          border-radius: 10px;
+
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+          --Pit: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
+          --heap: 14px 14px 16px #04060a,
+                    -14px -14px 16px #121628;
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+          --Pit: inset 14px 14px 16px #cbcbcb,
+                    inset -14px -14px 16px #f1f1f1;
+          --heap: 14px 14px 16px #cbcbcb,
+                    -14px -14px 16px #f1f1f1;
+}
+
+* {
+          font-family: "Roboto";
+}
+
+body {
+          color: var(--text);
+          background: var(--bg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100dvh;
+}
+
+#mainContiner {
+          text-align: center;
+          background: var(--bg);
+          padding: 50px 8%;
+          border-radius: 20px;
+          box-shadow: var(--heap);
+
+}
+
+label {
+          font-size: xx-large;
+          color: var(--text);
+}
+
+input {
+          text-align: center;
+          font-size: xx-large;
+          outline: none;
+          background: none;
+          border-radius: 10px;
+          margin: 10px 20px;
+          color: var(--text);
+          border: none;
+          box-shadow: var(--Pit);
+          transition: all 200ms ease-in;
+}
+
+button {
+          border-radius: 10px;
+          margin-top: 30px;
+          background: none;
+          border: none;
+          height: 5vh;
+          font-size: x-large;
+          box-shadow: var(--heap);
+          width: 20vw;
+          color: var(--text);
+}
+
+button:active {
+          box-shadow: var(--Pit);
+}

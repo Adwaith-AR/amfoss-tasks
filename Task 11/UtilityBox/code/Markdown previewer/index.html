@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head>
+                    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                    <link rel="stylesheet" href="style.css">
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Markdown Preview</title>
+          </head>
+
+          <body data-theme="light" id="mainBody">
+
+                    <div id="mainContainer">
+                              <div class="subContainer">
+                                        <div class="nav"><h1>input</h1></div>
+                                        <div id="input">
+
+
+
+                                                  <textarea name="textarea" id="textarea"># Project Name
+*A brief tagline or one-sentence description of your project.*
+                                                  
+## 🚀 Features
+- **Feature 1**: *Brief description.*
+- **Feature 2**: *Brief description.*
+- **Feature 3**: *Brief description.*
+                                                  
+## 🛠️ Installation
+1. Clone the repo:
+```bash
+git clone https://github.com/username/repository.git
+cd repository
+```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the application:
+```bash
+npm start
+```
+                                                  
+## 📚 Usage
+1. *Step 1 to use the project.*
+2. *Step 2 to use the project.*
+3. *Additional details if necessary.*
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+1. Fork the project.
+2. Create a new branch:
+```bash
+git checkout -b feature/YourFeatureName
+```
+3. Commit your changes:
+```bash
+git commit -m "Add some feature"
+```
+4. Push the branch:
+```bash
+git push origin feature/YourFeatureName
+```
+5. Open a pull request.
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
+</textarea>
+                                        </div>
+                              </div>
+                              <div class="subContainer">
+                                        <div class="nav"><h1>output</h1></div>
+                                        <div id="outputContainer"><div id="output"></div></div>
+                                        
+                              </div>
+                    </div>
+                    <script src="app.js"></script>
+          </body>
+
+</html>

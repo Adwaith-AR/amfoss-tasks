@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
+body {
+          text-align: center;
+          font-family: "Nunito", sans-serif;
+          margin: 0px;
+          background: var(--bg);
+          color: var(--text);
+}
+
+h1 {
+          font-size: max(5vw, 50px);
+          margin-bottom: 0px;
+          opacity: 0.6;
+}
+
+#output {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-size: 17vw;
+}
+
+#format {
+          opacity: 0.6;
+          margin-top: 0px;
+          font-size: max(5vw, 50px);
+}
+
+
+
+#btnContainer {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+          margin-top: 20px;
+          justify-content: center;
+}
+
+button {
+          font-family: "Nunito", sans-serif;
+          color: var(--text);
+          font-size: max(5vw, 50px);
+          min-height: 10px;
+          max-height: 140px;
+          width: 400px;
+          border-radius: 100px;
+          border: none;
+          opacity: 0.8;
+          outline: none;
+}
+
+button:hover {
+          opacity: 1;
+}
+
+button:nth-child(1) {
+          background: rgb(255, 208, 0);
+}
+
+button:nth-child(2) {
+          background: green;
+}
+
+button:nth-child(3) {
+          background: blue;
+}
+
+#lapsContainer {
+          overflow: hidden;
+          width: min(95vw, 1550px);
+          height: min-content;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          justify-self: center;
+          border-radius: 20px;
+          display: grid;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+}
+
+#lapsContainerHeader>p {
+          font-size: 2em;
+          margin: 10px;
+}
+
+#lapsContainerData {
+          height: 300px;
+          overflow: auto;
+
+}
+
+.lapsData {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 30px;
+          padding-right: 30px;
+
+}
+
+.lapsData>p {
+          font-size: 1.4em; 
+}
+
+
+
+
+.stopBtn {
+          background: red !important;
+}
+
+::-webkit-scrollbar {
+
+          width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+          background: #4fd1ff;
+
+          border-radius: 10px;
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head>
+                    <meta charset="UTF-8">
+                    <link rel="shortcut icon" href="" type="image/x-icon">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>UtilityBox</title>
+                    <link rel="stylesheet" href="style.css">
+          </head>
+
+          <body data-theme="light">
+                    <header>
+
+                              <button id="theme"></button>
+
+                    </header>
+                    <main>
+                              <h1>UtilityBox</h1>
+                              <p>
+                                        Get what ever tools you need and enjoy your life and make it easy
+                              </p>
+                              <div id="searchCotainer">
+                                        <input id="searchBox" placeholder="Search the tools you need" type="text">
+
+                                        <button onclick="search()" id="searchBtn">Search</button>
+                              </div>
+                              <div id="tools_container">
+
+                              </div>
+                    </main>
+                    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+                    <script src="app.js"></script>
+          </body>
+
+</html>

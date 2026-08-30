@@ -1,0 +1,123 @@
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+          --yellow: #ff9500;
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+          --yellow: #ff9500;
+
+}
+
+body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0px;
+          background: var(--bg);
+}
+
+#mainContainer {
+          overflow: hidden;
+          height: 700px;
+          width: 500px;
+          border-radius: 15px;
+          background: var(--bg);
+          display: grid;
+background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
+          grid-template-rows: auto 1fr;
+}
+
+#inputContainer {
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+}
+
+
+
+
+#mainContainer>div:first-child {
+          background: var(--bg);
+
+}
+
+input {
+          outline: none;
+          background: none;
+          margin: 0px;
+          border: none;
+          width: 94%;
+          height: 120px;
+          color: var(--text);
+          font-size: 50px;
+
+}
+
+#buttonContainer {
+          background: var(--bg);
+          display: grid;
+          grid-template-columns: auto 2fr;
+}
+
+.oprational {
+          background: var(--yellow);
+}
+
+.number {
+          background: var(--bg);
+}
+
+#oprationalContainer {
+          padding: 20px;
+          padding-top: 33px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-left: 0px;
+          align-items: center;
+          justify-content: start;
+
+}
+
+#numberContainer {
+          height: 400px;
+          gap: 10px;
+          display: grid;
+          padding: 20px;
+          padding-top: 30px;
+          padding-left: 30px;
+          padding-right: 0px;
+          grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+          border: none;
+          width: 90px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100px;
+          color: var(--text);
+          font-weight: 1000;
+          font-size: 35px;
+          transition: 100ms;
+          background: var(--bg);
+          box-shadow: 14px 14px 16px var(--darkShade),
+                    -14px -14px 16px var(--lightShade);
+}
+
+button:hover {
+          scale: 1.1;
+          transition: 100ms;
+}

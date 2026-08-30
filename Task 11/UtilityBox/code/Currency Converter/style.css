@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+          --Pit: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
+          --heap: 14px 14px 16px #04060a,
+                    -14px -14px 16px #121628;
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+          --Pit: inset 14px 14px 16px #cbcbcb,
+                    inset -14px -14px 16px #f1f1f1;
+          --heap: 14px 14px 16px #cbcbcb,
+                    -14px -14px 16px #f1f1f1;
+}
+
+* {
+          font-family: "Roboto";
+}
+
+body {
+          color: var(--text);
+
+          background: var(--bg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100dvh;
+}
+
+#mainContainer {
+          text-align: center;
+          background: var(--bg);
+          padding: 50px 8%;
+          border-radius: 20px;
+          box-shadow: var(--heap);
+
+}
+
+#CurencySelectorContainer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+}
+
+.CurrencyId {
+          outline: none;
+          background: none;
+          box-shadow: var(--Pit);
+          border-radius: 10px;
+          font-size: xx-large;
+          
+          border: none;
+          padding: 2% 3%;
+          color: var(--text);
+}
+
+option {
+          background: var(--bg);
+          color: var(--text);
+}
+
+#CurrencyAmountContainer {
+          width: 100%;
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+}
+
+#CurrencyAmountContainer input {
+          height: 50px;
+          width: 25vw;
+          background: none;
+          border: none;
+          border-radius: 10px;
+          box-shadow: var(--Pit);
+          outline: none;
+          text-align: center;
+          color: var(--text);
+          font-size: 200%;
+}
+button{
+          width: 100%;
+          margin-top: 60px;
+          height: 75px;
+          border-radius: 10px;
+          outline: none;
+          border: none;
+          background: none;
+          color: var(--text);
+          box-shadow: var(--heap);
+          font-size: 200%;
+}

@@ -1,0 +1,324 @@
+@keyframes blur {
+          0% {
+                    filter: blur(0px);
+          }
+
+          100% {
+                    filter: blur(50px);
+          }
+
+}
+
+@keyframes anti_blur {
+          0% {
+                    filter: blur(50px);
+          }
+
+          100% {
+                    filter: blur(0px);
+          }
+
+}
+
+
+[data-theme="dark"] {
+          --bg: #141414;
+          --Container: black;
+          --subContainer: #1a1a1a;
+          --text: #e5e7eb;
+          --orange: #f98322;
+          --orangeDark: #ff6a00;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --Container: white;
+          --subContainer: #c6c6c6;
+          --text: black;
+          --orange: #f98322;
+          --orangeDark: #ff6a00;
+
+}
+
+
+
+
+
+main {
+          font-family: "Poppi", sans-serif;
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+}
+
+#main_container {
+          position: relative;
+          width: 55vw;
+          height: 65vh;
+          display: flex;
+
+
+}
+
+.child1 {
+
+          height: 50vh;
+          width: 45vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+
+
+
+}
+
+.blur {
+          animation: blur 200ms;
+          animation-fill-mode: forwards;
+}
+
+.anti_blur {
+          animation: anti_blur 200ms;
+          animation-fill-mode: forwards;
+}
+
+.child2 {
+
+          position: relative;
+          height: 50vh;
+          width: 45vw;
+          padding: 20px;
+          background: var(--Container);
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+}
+
+#nothing {
+          visibility: hidden;
+}
+
+.burgerimg {
+          aspect-ratio: 16/16;
+          width: 545px;
+          filter: drop-shadow(0px 0px 100px var(--text));
+}
+
+h1 {
+          color: var(--text);
+          font-weight: 1000;
+          letter-spacing: 1px;
+          font-family: "Poppi", sans-serif;
+          font-size: 35px;
+
+}
+
+span {
+          color: var(--orange);
+}
+
+p {
+          color: var(--text);
+          font-weight: 100;
+          letter-spacing: 1px;
+          font-family: "Poppi", sans-serif;
+          font-size: 15px;
+          opacity: 0.8;
+}
+
+h3 {
+          color: var(--orange);
+          font-weight: 900;
+          font-family: "Poppi", sans-serif;
+          font-size: 27px;
+}
+
+#product_quantity {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          width: 50%;
+          height: 12%;
+          gap: 5px;
+}
+
+.quantity_button {
+          border-radius: 10px;
+          font-size: 20px;
+          border: none;
+          color: var(--text);
+          background: var(--subContainer);
+          font-family: "Poppi", sans-serif;
+}
+
+
+h5 {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--text);
+          font-weight: 100;
+          font-size: 20px;
+          font-family: "Poppi", sans-serif;
+}
+
+#productItems {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 10px;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-evenly;
+}
+
+#productItems label {
+          color: var(--text);
+          border-radius: 10px;
+          background: var(--subContainer);
+          font-size: 1em;
+          padding: 10px 20px;
+          text-transform: uppercase;
+}
+
+#productItems input {
+          display: none;
+}
+
+.hide {
+          display: none;
+
+}
+
+#button_container {
+          height: 25%;
+          gap: 15px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+}
+
+.button {
+          font-weight: 600;
+          border: none;
+          border-radius: 10px;
+          font-size: 15px;
+}
+
+#b1 {
+          color: var(--bg);
+          background: linear-gradient(90deg, #ffc800, #ff7300);
+}
+
+#b2 {
+          color: var(--text);
+          background: var(--subContainer);
+}
+
+.orientation {
+          grid-template-columns: 1fr 1fr 1fr;
+          width: 35%;
+
+}
+
+.invisibility {
+          display: none;
+
+}
+
+button {
+          cursor: pointer;
+}
+
+.item_selected {
+          color: var(--bg) !important;
+          font-weight: 600;
+          background: linear-gradient(90deg, #ffc800, #ff7300) !important;
+}
+
+@media screen and (max-width:767px) {
+          main {
+                    font-family: "Poppi", sans-serif;
+                    height: 100dvh;
+                    width: 100dvw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+          }
+
+          #main_container {
+                    position: static;
+                    width: 100%;
+                    height: 100dvh;
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    overflow: auto;
+
+
+          }
+
+          .child1 {
+                    padding-top: 20px;
+                    width: auto;
+                    height: auto;
+          }
+
+          .burgerimg {
+                    width: 70vw;
+                    filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.54));
+          }
+
+          .child2 {
+
+                    position: relative;
+                    height: 50vh;
+                    width: 90%;
+                    padding: 20px;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+          }
+
+          h1 {
+                    font-size: 30px;
+          }
+
+          #product_quantity {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    width: 50%;
+                    height: 10%;
+                    gap: 5px;
+          }
+
+          #productItems label {
+                    border-radius: 5px;
+                    font-size: 15px;
+                    padding: 5px 10px;
+                    text-transform: uppercase;
+          }
+
+          #button_container {
+                    height: 10%;
+                    gap: 15px;
+                    width: 100%;
+                    display: flex;
+          }
+
+          .button {
+                    width: 100%;
+                    border-radius: 5px;
+          }
+}

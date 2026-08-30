@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+          --Pit: inset 14px 14px 16px #cbcbcb,
+                    inset -14px -14px 16px #f1f1f1;
+          --heap: 14px 14px 16px #cbcbcb,
+                    -14px -14px 16px #f1f1f1;
+}
+
+* {
+          font-family: "Roboto";
+}
+
+body {
+          color: var(--text);
+
+          background: var(--bg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+}
+
+#mainContainer {
+          box-shadow: var(--heap);
+          padding: 20px 20px 100px 20px;
+          border-radius: 20px;
+          box-sizing: border-box;
+          display: grid;
+          place-items: center;
+}
+
+#qrCodeContainer {
+          height: 300px;
+          width: 300px;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          box-shadow: var(--Pit);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+
+#qrCodeContainer img {
+          border-radius: 5px;
+}
+
+#InText {
+          width: auto;
+          height: 50px;
+          padding: 0px 30px;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          box-shadow: var(--Pit);
+          text-align: center;
+          color: var(--text);
+          font-size: 1.5vw;
+          background: none;
+}
+
+#Genarate {
+          width: 50%;
+          margin-top: 50px;
+          height: 100%;
+          display: block;
+          font-size: 1.5vw;
+          border-radius: 10px;
+          border: none;
+          background: none;
+          cursor: pointer;
+          box-shadow: var(--heap);
+          transition: box-shadow 2s;
+          color: var(--text);
+          outline: none;
+}
+
+#Genarate:active {
+          box-shadow: var(--Pit);
+          transition: box-shadow 2s;
+
+}

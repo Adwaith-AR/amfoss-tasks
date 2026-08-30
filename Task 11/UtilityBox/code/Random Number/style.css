@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+
+}
+
+
+
+@keyframes shake {
+          0% {
+                    transform: translateX(20px)
+          }
+
+          25% {
+                    transform: translateX(-20px)
+          }
+
+          50% {
+                    transform: translateX(20px)
+          }
+
+          75% {
+                    transform: translateX(-20px)
+          }
+
+          100% {
+                    transform: translateX(20px)
+          }
+
+}
+
+
+body {
+          font-family: "Nunito", sans-serif;
+          background: var(--bg);
+          display: grid;
+
+          height: 100vh;
+          grid-template-columns: auto 1fr;
+          margin: 0px;
+}
+
+button {
+          cursor: pointer;
+}
+
+.container {
+          border-radius: 20px;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
+}
+
+#displayContainer {
+
+          text-align: center;
+          width: min(1100px, 80vw);
+          border-radius: 20px;
+          padding: 20px;
+}
+
+#displayContainer>label:nth-child(1) {
+          font-family: "Nunito", sans-serif;
+          color: var(--text);
+          font-size: min(20vw, 12em);
+}
+
+
+
+#displayContainer>div {
+          display: flex;
+          gap: 80px;
+          margin-top: 100px;
+          justify-self: center;
+}
+
+#displayContainer>div>button {
+          height: 70px;
+          font-family: "Nunito", sans-serif;
+          width: min(30vw, 300px);
+          background: #5157f3;
+          border: none;
+          color: var(--text);
+          font-size: min(6vw, 40px);
+          border-radius: 15px;
+
+}
+
+#outContainer {
+          text-align: center;
+          padding-top: 150px;
+          padding-left: 70px;
+          
+}
+
+#inContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          justify-content: center;
+}
+
+#dataContainer {
+
+          font-family: "Nunito", sans-serif;
+          width: 528px;
+          color: var(--text);
+          padding: 40px;
+          padding-top: 20px;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
+}
+
+#dataContainer label {
+          font-size: min(3vw, 20px);
+          margin: 0px;
+}
+
+#dataContainer>div:first-child>label {
+          font-size: min(3vw, 30px);
+          margin: 0px;
+
+}
+
+#dataContainer>div:nth-child(7) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          justify-content: space-between;
+}
+
+.inputNumber {
+          display: flex;
+          height: auto clamp(auto, 50px);
+          margin-top: 5px;
+          border-radius: 15px;
+          overflow: hidden;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+
+}
+
+.inputNumber label {
+          width: 80%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px !important;
+          height: 100%;
+          font-family: "Nunito", sans-serif;
+}
+
+.inputNumber input {
+          color: var(--text);
+          text-align: center;
+          font-size: 20px;
+          width: 80%;
+          border: none;
+          outline: none;
+          background: none;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Nunito", sans-serif;
+}
+
+.inputNumber button {
+          color: var(--text);
+          font-size: 30px;
+          width: 10%;
+          background: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          font-family: "Nunito", sans-serif;
+
+}
+
+.inputNumber button:hover {
+
+          background: var(--lightShade);
+}
+
+
+
+
+
+.inputNumber:nth-child(2) button {
+          width: 20% !important;
+
+}
+
+#numOfDigitBtnContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+
+#numOfDigitBtn {
+          scale: 1.7;
+}
+
+#resetBtn {
+          background: #5157f3;
+          width: 100%;
+          margin-top: 20px;
+          height: 50px;
+          border-radius: 15px;
+          border: none;
+          color: var(--text);
+          font-size: 20px;
+}
+
+#historyContainer {
+          width: min(528px, 30vw);
+          height: 400px;
+          padding: 40px;
+          padding-top: 20px;
+          padding-bottom: 0px;
+          font-family: "Nunito", sans-serif;
+          background: var(--bg);
+                    box-shadow: 14px 14px 16px var(--darkShade),
+                              -10px -10px 16px var(--lightShade);
+}
+
+#historyContainer>div:first-child {
+          display: flex;
+          width: 100%;
+}
+
+#historyContainer>div:first-child button {
+          margin-left: auto;
+          border: none;
+          background: none;
+          color: var(--text);
+          font-size: 20px;
+          font-family: "Nunito", sans-serif;
+}
+
+#historyContainer>div:first-child p {
+          color: var(--text);
+          font-size: 20px;
+}
+
+#historyMainContainer {
+          width: 100%;
+          height: 80%;
+          gap: 20px;
+          display: grid;
+          overflow: auto;
+
+}
+
+.historyData {
+          color: var(--text);
+          border-radius: 15px;
+          padding: 0px 20px;
+          padding-right: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: var(--bg);
+          box-shadow: inset 14px 14px 16px var(--darkShade),
+                    inset -14px -14px 16px var(--lightShade);
+}
+
+.historyData button {
+          height: 45px;
+          background: none;
+          width: 45px;
+          border: none;
+          border-radius: 10px;
+}
+
+.historyData button:hover {
+          background: 182135;
+}
+
+.shake {
+          border: 3px solid red;
+          animation: shake 100ms;
+}
+
+.blur {
+          pointer-events: none;
+          filter: blur(10px);
+}
+
+.show {
+          display: block !important;
+}
+
+@media screen and (max-width:767px) {
+
+          body {
+                    height: 100dvh;
+                    width: 100dvw;
+                    display: block;
+                    place-items: center;
+          }
+
+          #outContainer {
+                    padding-top: 10px;
+                    padding-left: 10px;
+          }
+
+
+
+          #dataContainer {
+                    height: 53vh;
+                    width: 75vw;
+                    margin: 10px;
+                    padding-top: 10px;
+          }
+
+          #historyContainer {
+                    width: 85vw;
+                    padding: 10px;
+                    overflow: hidden;
+                    font-family: "Nunito", sans-serif;
+          }
+
+          #inContainer {
+                    gap: 0px;
+          }
+
+          #displayContainer>div {
+                    margin-top: 20px;
+          }
+}
+::-webkit-scrollbar {
+
+          width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+          background: #4fd1ff;
+
+          border-radius: 10px;
+
+}

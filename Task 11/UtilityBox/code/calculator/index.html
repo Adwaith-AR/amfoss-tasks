@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="style.css">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Calculator</title>
+          </head>
+
+          <body data-theme="dark">
+
+                    <div id="mainContainer">
+
+                              <div id="inputContainer">
+                                        <input id="input" type="text">
+                              </div>
+                              <div id="buttonContainer">
+                                        <div id="numberContainer">
+                                                  <button onclick="btnPressed(`7`)" id="btn7" class="number">7</button>
+                                                  <button onclick='btnPressed("8  ")' id="btn8" class="number">8</button>
+                                                  <button onclick="btnPressed(`9`)" id="btn9" class="number">9</button>
+                                                  <button onclick="btnPressed(`4`)" id="btn4" class="number">4</button>
+                                                  <button onclick="btnPressed(`5`)" id="btn5" class="number">5</button>
+                                                  <button onclick="btnPressed(`6`)" id="btn6" class="number">6</button>
+                                                  <button onclick="btnPressed(`1`)" id="btn1" class="number">1</button>
+                                                  <button onclick="btnPressed(`2`)" id="btn2" class="number">2</button>
+                                                  <button onclick="btnPressed(`3`)" id="btn3" class="number">3</button>
+                                                  <button onclick="btnPressed(`0`)" id="btn0" class="number">0</button>
+                                                  <button onclick="btnPressed(`.`)" id="btn." class="number">.</button>
+                                                  <button onclick="btnPressed(`=`)" id="ans" class="number">=</button>
+                                        </div>
+                                        <div id="oprationalContainer">
+                                                  <button onclick="btnPressed(`+`)" id="addition" class="oprational">+</button>
+                                                  <button onclick="btnPressed(`-`)" id="subtraction" class="oprational">-</button>
+                                                  <button onclick="btnPressed(`*`)" id="multiplication" class="oprational">*</button>
+                                                  <button onclick="btnPressed(`/`)" id="divition" class="oprational">/</button>
+                                                  <button onclick="btnPressed(`C`)" id="clear" class="oprational">C</button>
+                                        </div>
+                              </div>
+                    </div>
+                    <script src="app.js"></script>
+          </body>
+
+</html>

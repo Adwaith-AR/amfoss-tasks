@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+[data-theme="dark"] {
+          --bg: #0b0f19;
+          --text: #e5e7eb;
+          --lightShade: #121628;
+          --darkShade: #04060a;
+          --Pit: inset 14px 14px 16px #04060a,
+                    inset -14px -14px 16px #121628;
+          --heap: 14px 14px 16px #04060a,
+                    -14px -14px 16px #121628;
+}
+
+[data-theme="light"] {
+          --bg: #e0e0e0;
+          --text: black;
+          --lightShade: #f1f1f1;
+          --darkShade: #cbcbcb;
+          --Pit: inset 14px 14px 16px #cbcbcb,
+                    inset -14px -14px 16px #f1f1f1;
+          --heap: 14px 14px 16px #cbcbcb,
+                    -14px -14px 16px #f1f1f1;
+}
+
+* {
+          margin: 0px;
+          padding: 0px;
+          font-family: "Roboto";
+}
+
+body {
+          background: var(--bg);
+          color: var(--text);
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100dvh;
+
+}
+
+#MainBox {
+          padding: 40px;
+          text-align: center;
+          background: var(--bg);
+          border-radius: 20px;
+          box-shadow: var(--heap);
+
+
+}
+
+#MainBox h1 {
+          font-size: 3vw;
+}
+
+#dataContainer {
+          text-align: left;
+}
+
+#dataContainer h6 {
+          font-size: 1.2vw;
+          margin-top: 30px;
+
+}
+
+#dataContainer input {
+          width: 100%;
+          color: var(--text);
+          height: 6dvh;
+          border: none;
+          outline: none;
+          background: none;
+          box-shadow: var(--Pit);
+          border-radius: 10px;
+          font-size: 150%;
+          padding: 10px 20px;
+          box-sizing: border-box;
+
+}
+#Calculator{
+          height: 6vh;
+          width: 100%;
+          margin-top: 40px;
+          border-radius: 10px;
+          border: none;
+          background: none;
+          color: var(--text);
+          box-shadow: var(--heap);
+          font-size: x-large;
+          font-style: bold;
+}
+#Calculator:active{
+          box-shadow: var(--Pit);
+
+}
+

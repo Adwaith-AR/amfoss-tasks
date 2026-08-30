@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+          <head>
+                    <link rel="stylesheet" href="style.css">
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Random Number</title>
+          </head>
+
+          <body data-theme="light" >
+                    <div id="outContainer">
+                              <h1 style="color: var(--text);">Random Number Generator</h1>
+                              <div class="container" id="displayContainer">
+                                        <label id="display">0</label>
+                                        <br>
+                                        <div>
+                                                  <button id="generateBtn" onclick="randomNumberGenerator()">Generate</button>
+                                                  <button>Copy</button>
+                                        </div>
+                              </div>
+                    </div>
+                    <div id="inContainer">
+                              <div class="container" id="dataContainer">
+                                        <div>
+                                                  <img src="" alt="">
+                                                  <label for="">Generator Settings</label>
+                                        </div>
+                                        <br>
+                                        <label for="">Number Type</label><br>
+                                        <div id="numberTypeContainer" class="inputNumber">
+                                                  <button onclick="numberTypeBackward()" class="decrees">
+                                                            < </button>
+                                                                      <label id="numberType" for=""></label>
+                                                                      <button b onclick="numberTypeForward()" class="backwards">
+                                                                                >
+                                                                      </button>
+                                        </div><br>
+                                        <div>
+                                                  <div>
+                                                            <label for="">Min</label>
+                                                            <div id="minContainer" class="inputNumber">
+                                                                      <button onclick="numberDecrease('min')" class="decrees">-</button>
+                                                                      <input id="min" type="number">
+                                                                      <button onclick="numberIncrease('min')"  class="backwards">+</button>
+                                                            </div>
+                                                  </div>
+                                                  <div>
+                                                            <label for="">Max</label>
+                                                            <div id="maxContainer" class="inputNumber">
+                                                                      <button onclick='numberDecrease("max")' class="decrees">-</button>
+                                                                      <input id="max" type="number">
+                                                                      <button onclick='numberIncrease("max")' class="backwards">+</button>
+                                                            </div>
+                                                  </div>
+
+                                        </div><br>
+                                        <div id="numOfDigitBtnContainer"><label>Number Of Digits</label> <input onclick="numOfDigitStateFun()" id="numOfDigitBtn" type="checkbox"></div>
+                                        
+                                        <div id="numOfDigitContainer" class="inputNumber">
+                                                  <button onclick='numberDecrease("numOfDigit")' class="decrees">-</button>
+                                                  <input id="numOfDigit" type="number">
+                                                  <button onclick="numberIncrease('numOfDigit')"  class="backwards">+</button>
+                                        </div>
+                                        <button onclick="reset()" id="resetBtn">Reset Settings</button>
+                              </div>
+                              <div class="container" id="historyContainer">
+                                        <div>
+                                                  <img src="">
+                                                  <p>Recent History</p> <button onclick="clearHistory()" ><img src=""> Clear All</button>
+                                        </div>
+                                        <div id="historyMainContainer">
+                                                  
+                                                  
+                                        </div>
+                              </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <script src="app.js"></script>
+          </body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

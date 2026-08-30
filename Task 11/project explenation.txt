@@ -1,0 +1,24 @@
+Ammu AI 
+
+it is a custom ai designed to assist me with my linux desktop like seri and copilot 
+
+BurgerShop
+repo:https://github.com/Adwaith-AR/Buger-shop
+Link:https://bugershop-av.vercel.app/
+it is burger shop website with stunding ui and features
+the only ai part is the img gearation
+
+Drange Management
+it is a sofware hardware companed project which detects the brokages in a drainage
+i don't have the imgs of the hardware as i created this project in my 10th
+
+Home Automation
+
+it is a smartHome system which offers rf id authothetication,face id authothetication,smart watertank system,iot,emergency system, elder person protection system
+i don't have the imgs of the hardware as i created this project in my 10th
+
+Utility website
+repo:https://github.com/Adwaith-AR/UtilityBox
+Link:https://utility-box.vercel.app/
+
+it is a simple wesite which offers some tools for our daily use
